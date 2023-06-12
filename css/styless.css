@@ -437,19 +437,6 @@ span {
   margin-right: 0;
 }
 
-.portfolio.list {
-  display: flex;
-  justify-content: center;
-  padding-top: 96px;
-  margin-bottom: 72px;
-}
-.prof-but {
-  margin-right: 24px;
-}
-.prof-but:last-child {
-  margin-right: 0px;
-}
-
 /*  */
 .herou-title {
   font-size: 56px;
@@ -659,6 +646,18 @@ span {
   margin-left: 16px;
 }
 /* <---  portfolio ---> */
+.portfolio.list {
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+  margin-bottom: 72px;
+}
+.prof-but {
+  margin-right: 24px;
+}
+.prof-but:last-child {
+  margin-right: 0px;
+}
 .logo-span {
   color: var(--title-text-color);
 }

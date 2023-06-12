@@ -58,14 +58,15 @@ span {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 999;
 }
-.flax-header .link {
+/* хедер- */
+/* .flax-header .link {
   color: var(--title-text-color);
   font-weight: 500;
 }
 .flax-header.list .link:hover,
 .flax-header.list .link:focus {
   color: var(--pressed-color);
-}
+} */
 /* <--  ПСЕВДОЭЛЕМЕНТ  --> */
 .li-head .link::after {
   content: "";
@@ -76,11 +77,11 @@ span {
   position: absolute;
   bottom: -1px;
   left: 0;
+  border-radius: 2px;
+  background-color: var(--pressed-color);
 
   /* transform-origin: left;    < -- начинает движение слева при ховере*/
   transform: scaleX(0);
-  border-radius: 2px;
-  background-color: var(--pressed-color);
 
   /*  <---инструкции переходов--->  */
   transition-property: transform;

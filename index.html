@@ -31,18 +31,20 @@
           <a href="./index.html" class="logo link nav-marg">
             Web<span>Studio</span>
           </a>
-          <ul class="flax-header list">
-            <li class="li-head">
+          <ul class="flax-header list text-medium">
+            <li class="li-head card-set-item">
               <a href="./index.html" class="link active">Studio</a>
             </li>
-            <li class="li-head">
+            <li class="li-head card-set-item">
               <a href="./portfolio.html" class="link">Portfolio</a>
             </li>
-            <li class="li-head"><a href="" class="link">Contacts</a></li>
+            <li class="li-head card-set-item">
+              <a href="" class="link">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="adres-nav">
-          <ul class="flax list">
+          <ul class="flax list text-small">
             <li class="adres-marg">
               <a href="mailto:info@devstudio.com" class="link adres"
                 >info@devstudio.com</a
@@ -55,31 +57,40 @@
             </li>
           </ul>
         </address>
-        <buttom type="button" class="mobyole-menu-btn">
-          <svg width="32" height="22" class="mobyle-menu-icon">
-            <use href="./images/icons.svg#menu-burger"></use>
+        <button
+          type="button"
+          class="mobile-menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="32"
+            height="32"
+            class="mobyle-menu-icon"
+            aria-label="Mobile menu chenge"
+          >
+            <use class="icon-close" href="./images/icons.svg#close"></use>
+            <use
+              class="icon-burger"
+              href="./images/icons.svg#menu-burger"
+            ></use>
           </svg>
-        </buttom>
-        <div class="mobile-menu">
-          <button class="mobile-menu-button">
-            <svg class="modal-icon" width="8" height="8">
-              <use href="./images/icons.svg#close"></use>
-            </svg>
-          </button>
-        </div>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>Cont</div>
       </div>
     </header>
     <main>
-      <!-- <section class="section-herou">
+      <section class="section-herou">
         <div class="container">
-          <h1 class="herou-title">Effective Solutions for Your Business</h1>
-          модальное окно
+          <h1 class="header-two">Effective Solutions For Your Business</h1>
+          <!-- модальное окно -->
           <button data-modal-open type="button" class="herou-button">
             Order Service
           </button>
         </div>
-      </section> -->
-      <!-- <section class="section section-one">
+      </section>
+      <section class="section section-one">
         <div class="container">
           <h2 class="visually-hidden">h2</h2>
           <ul class="flax-section-one list">
@@ -89,8 +100,8 @@
                   <use href="./images/icons.svg#icon-Icon-1"></use>
                 </svg>
               </div>
-              <h3 class="one-title">Strategy</h3>
-              <p class="text-section-one">
+              <h3 class="header-two">Strategy</h3>
+              <p class="text-medium">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -101,8 +112,8 @@
                   <use href="./images/icons.svg#icon-Icon-2"></use>
                 </svg>
               </div>
-              <h3 class="one-title">Punctuality</h3>
-              <p class="text-section-one">
+              <h3 class="header-two">Punctuality</h3>
+              <p class="text-medium">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -113,8 +124,8 @@
                   <use href="./images/icons.svg#icon-Icon-3"></use>
                 </svg>
               </div>
-              <h3 class="one-title">Diligence</h3>
-              <p class="text-section-one">
+              <h3 class="header-two">Diligence</h3>
+              <p class="text-medium">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -125,18 +136,18 @@
                   <use href="./images/icons.svg#icon-Icon-4"></use>
                 </svg>
               </div>
-              <h3 class="one-title">Technologies</h3>
-              <p class="text-section-one">
+              <h3 class="header-two">Technologies</h3>
+              <p class="text-medium">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section section-two">
+      </section>
+      <section class="section section-two">
         <div class="container">
-          <h2 class="two-title">What are we doing</h2>
+          <h2 class="header-two">What are we doing</h2>
           <ul class="flax list">
             <li class="section-two-list card-set-item">
               <img
@@ -164,8 +175,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section-three">
+      </section>
+      <section class="section-three">
         <div class="container">
           <h2 class="three-title">Our Team</h2>
           <ul class="flax list cards">
@@ -339,7 +350,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="customers">
         <div class="container">
           <h2 class="four-title">Customers</h2>
@@ -455,7 +466,7 @@
       </div>
     </footer> -->
     <!-- модальное окно -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-bt" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -536,8 +547,9 @@
           <button type="submit" class="madal-buttom">Send</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <!-- скрипт подтягивает высоту хедера  -->
     <!-- <script>
       const { height: pageHeaderHeight } = document

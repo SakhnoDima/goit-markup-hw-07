@@ -58,26 +58,77 @@
           </ul>
         </address>
         <button
-          type="button"
-          class="mobile-menu-button"
+          class="mobyle-menu-button-open js-open-menu"
           aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
+          aria-controls="mobile-menu"
         >
-          <svg
-            width="32"
-            height="32"
-            class="mobyle-menu-icon"
-            aria-label="Mobile menu chenge"
-          >
-            <use class="icon-close" href="./images/icons.svg#close"></use>
+          <svg width="32" height="32" class="mobyle-menu-icon-open">
             <use
               class="icon-burger"
               href="./images/icons.svg#menu-burger"
             ></use>
           </svg>
         </button>
-        <div class="menu-container" id="menu-container" data-menu>Cont</div>
+        <div class="mobyle-container js-menu-container" id="mobile-menu">
+          <div class="container mobyle">
+            <button class="mobyle-menu-button-close js-close-menu">
+              <svg width="8" height="8" class="mobyle-menu-icon-close">
+                <use class="icon-close" href="./images/icons.svg#close"></use>
+              </svg>
+            </button>
+            <ul class="mobyle-ul">
+              <li class="header-two">
+                <a href="./index.html" class="link">Studio</a>
+              </li>
+              <li class="header-two">
+                <a href="./portfolio.html" class="link">Portfolio</a>
+              </li>
+              <li class="header-two">
+                <a href="#" class="link">Contacts</a>
+              </li>
+            </ul>
+            <ul class="mobyle-cont">
+              <li class="header-two">
+                <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li class="header-three">
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="social-flex mobyle">
+              <li class="social-list">
+                <a class="social-link" href="">
+                  <svg class="social link" width="16" height="16">
+                    <use href="./images/icons.svg#insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list">
+                <a class="social-link" href="">
+                  <svg class="social link" width="16" height="16">
+                    <use href="./images/icons.svg#twit"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list">
+                <a class="social-link" href="">
+                  <svg class="social link" width="16" height="16">
+                    <use href="./images/icons.svg#face"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list">
+                <a class="social-link" href="">
+                  <svg class="social link" width="16" height="16">
+                    <use href="./images/icons.svg#in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -182,14 +233,15 @@
           <ul class="flax list cards">
             <li class="three-title-background card-set-item">
               <img
-                src="./images/Mark.jpg"
+                srcset="./images/mark-300@2x.jpg 2x"
+                src="./images/mark-300.jpg"
                 alt="Product Designer"
                 width="264"
                 height="260"
               />
               <div class="three-cards">
-                <h3 class="three-title-name">Mark Guerrero</h3>
-                <p class="text-section-three">Product Designer</p>
+                <h3 class="header-three">Mark Guerrero</h3>
+                <p class="text-body">Product Designer</p>
                 <ul class="social-flex">
                   <li class="social-list">
                     <a class="social-link" href="">
@@ -224,14 +276,15 @@
             </li>
             <li class="three-title-background card-set-item">
               <img
-                src="./images/Tom.jpg"
+                srcset="./images/tom-300@2x.jpg 2x"
+                src="./images/tom-300.jpg"
                 alt="Frontend Developer"
                 width="264"
                 height="260"
               />
               <div class="three-cards">
-                <h3 class="three-title-name">Tom Ford</h3>
-                <p class="text-section-three">Frontend Developer</p>
+                <h3 class="header-three">Tom Ford</h3>
+                <p class="text-body">Frontend Developer</p>
                 <ul class="social-flex">
                   <li class="social-list">
                     <a class="social-link" href="">
@@ -266,14 +319,15 @@
             </li>
             <li class="three-title-background card-set-item">
               <img
-                src="./images/Camila.jpg"
+                srcset="./images/camila-300@2x.jpg 2x"
+                src="./images/camila-300.jpg"
                 alt="Marketing"
                 width="264"
                 height="260"
               />
               <div class="three-cards">
-                <h3 class="three-title-name">Camila Garcia</h3>
-                <p class="text-section-three">Marketing</p>
+                <h3 class="header-three">Camila Garcia</h3>
+                <p class="text-body">Marketing</p>
                 <ul class="social-flex">
                   <li class="social-list">
                     <a class="social-link" href="">
@@ -308,14 +362,15 @@
             </li>
             <li class="three-title-background card-set-item">
               <img
-                src="./images/Daniel.jpg"
+                srcset="./images/dan-300@2x.jpg 2x"
+                src="./images/dan-300.jpg"
                 alt="UI Designer"
                 width="264"
                 height="260"
               />
               <div class="three-cards">
-                <h3 class="three-title-name">Daniel Wilson</h3>
-                <p class="text-section-three">UI Designer</p>
+                <h3 class="header-three">Daniel Wilson</h3>
+                <p class="text-body">UI Designer</p>
                 <ul class="social-flex">
                   <li class="social-list">
                     <a class="social-link" href="">

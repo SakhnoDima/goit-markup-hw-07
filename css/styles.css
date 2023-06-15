@@ -129,6 +129,8 @@ span {
   position: relative;
 }
 .button-line {
+  min-width: 350px;
+
   width: 100%;
   min-height: 70px;
   border-bottom: 1px solid #e7e9fc;
@@ -262,6 +264,8 @@ span {
 
 /*  < --- SECTION HEROU --- > */
 .section-herou {
+  min-width: 350px;
+
   text-align: center;
   height: 432px;
   background-color: var(--title-text-color);
@@ -440,6 +444,7 @@ span {
 }
 
 .modal-form .modal-input label {
+  user-select: none;
   margin-bottom: 4px;
 }
 .svg-posotion {
@@ -611,6 +616,8 @@ textarea:focus {
 }
 /*  < --- SECTION THREE --->  */
 .section-three {
+  min-width: 350px;
+
   padding: 96px 0;
   background-color: var(--unpresed-color);
 }
@@ -699,6 +706,8 @@ textarea:focus {
 }
 /* <---  FOOTER  ---> */
 .footer {
+  min-width: 350px;
+
   background-color: var(--title-text-color);
 }
 .container-logo {

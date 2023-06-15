@@ -129,6 +129,12 @@
             </ul>
           </div>
         </div>
+        <script
+          defer
+          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous"
+        ></script>
       </div>
     </header>
     <main>
@@ -528,6 +534,7 @@
       </div>
     </footer>
     <!-- модальное окно -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-bt" data-modal-close>
@@ -535,9 +542,7 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <p class="modal-header">
-          Leave your contacts and we will call you back
-        </p>
+        <p class="text-medium">Leave your contacts and we will call you back</p>
         <form class="modal-form" autocomplete="off">
           <div class="modal-input">
             <label class="label-user-name" for="user-name">Name</label>
@@ -611,7 +616,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+
     <!-- скрипт подтягивает высоту хедера  -->
     <!-- <script>
       const { height: pageHeaderHeight } = document

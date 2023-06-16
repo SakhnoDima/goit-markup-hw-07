@@ -538,6 +538,9 @@ textarea:focus {
 }
 /* ----------------------------------------- */
 .icon-checkbox {
+  display: flex;
+  align-items: flex-end;
+
   line-height: 1.17;
   color: var(--input-modal-color);
 }
@@ -563,6 +566,7 @@ textarea:focus {
   margin-right: 8px;
 }
 .privacy-li {
+  margin-left: 5px;
   color: var(--primary-color);
   text-decoration: underline;
 }

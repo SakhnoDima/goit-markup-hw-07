@@ -231,7 +231,10 @@ span {
 /* SOCIAL */
 .social-flex.mobyle {
   display: flex;
+  justify-content: space-between;
   gap: 54px;
+
+  padding: 0;
 }
 .social-flex {
   display: flex;
@@ -275,7 +278,7 @@ span {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(/images/Dark-bgmob.jpg);
   background-size: cover;
   max-width: 1440px;
   background-repeat: no-repeat;
@@ -293,7 +296,7 @@ span {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office@2x.jpg);
+      url(../images/Dark-bgmob@2x.jpg);
   }
 }
 .section-herou .header-two {
@@ -1078,8 +1081,25 @@ h2.title-text {
   .adres-nav .link:focus {
     color: var(--pressed-color);
   }
+  /*  < --- SECTION HEROU --> */
   .section-herou {
     height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/Dark-bgtablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-herou {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bgtablet@2x.jpg);
+    }
   }
   .section-herou .header-two {
     font-size: 56px;
@@ -1201,9 +1221,26 @@ h2.title-text {
     flex-direction: row;
     gap: 40px;
   }
+  /*  < -- SECTION-HEROU -- > */
   .section-herou {
     height: 600px;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/images/people-office\ 1desk.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-herou {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office\ 1desk@2x.jpg);
+    }
   }
   .section-herou .header-two {
     margin-bottom: 48px;

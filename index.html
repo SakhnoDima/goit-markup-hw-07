@@ -216,31 +216,61 @@
           <h2 class="header-two">What are we doing</h2>
           <ul class="flax list">
             <li class="section-two-list card-set-item">
-              <img
-                srcset="./images/img1@2x.jpg 2x"
-                src="./images/img1.jpg"
-                alt="work1"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset=".\images\img1.webp 1x, .\images\img1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset=".\images\img1.jpg 1x, .\images\img1@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/img1.jpg"
+                  alt="work1"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="section-two-list card-set-item">
-              <img
-                srcset="./images/img2@2x.jpg 2x"
-                src="./images/img2.jpg"
-                alt="work2"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset=".\images\img2.webp 1x, .\images\img2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset=".\images\img2.jpg 1x, .\images\img2@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/img2.jpg"
+                  alt="work2"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="section-two-list card-set-item">
-              <img
-                srcset="./images/img3@2x.jpg 2x"
-                src="./images/img3.jpg"
-                alt="work3"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset=".\images\img3.webp 1x, .\images\img3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset=".\images\img3.jpg 1x, .\images\img3@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/img3.jpg"
+                  alt="work3"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -250,14 +280,27 @@
           <h2 class="header-two">Our Team</h2>
           <ul class="flax list cards">
             <li class="three-title-background card-set-item">
-              <img
-                class="section-three-img"
-                srcset="./images/mark-300@2x.jpg 2x"
-                src="./images/mark-300.jpg"
-                alt="Product Designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    .\images\mark-300WEB-P.webp    1x,
+                    .\images\mark-300@2xWEB-P.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset=".\images\mark-300.jpg 1x, .\images\mark-300@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="section-three-img"
+                  src="./images/mark-300.jpg"
+                  alt="Product Designer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="three-cards">
                 <h3 class="header-three">Mark Guerrero</h3>
                 <p class="text-body">Product Designer</p>
@@ -294,14 +337,27 @@
               </div>
             </li>
             <li class="three-title-background card-set-item">
-              <img
-                class="section-three-img"
-                srcset="./images/tom-300@2x.jpg 2x"
-                src="./images/tom-300.jpg"
-                alt="Frontend Developer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    .\images\tom-300WEB-P.webp    1x,
+                    .\images\tom-300@2xWEB-P.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset=".\images\tom-300.jpg 1x, .\images\tom-300@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="section-three-img"
+                  src="./images/tom-300.jpg"
+                  alt="Frontend Developer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="three-cards">
                 <h3 class="header-three">Tom Ford</h3>
                 <p class="text-body">Frontend Developer</p>
@@ -338,14 +394,30 @@
               </div>
             </li>
             <li class="three-title-background card-set-item">
-              <img
-                class="section-three-img"
-                srcset="./images/camila-300@2x.jpg 2x"
-                src="./images/camila-300.jpg"
-                alt="Marketing"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    .\images\camila-300WEB-P.webp    1x,
+                    .\images\camila-300@2xWEB-P.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    .\images\camila-300.jpg    1x,
+                    .\images\camila-300@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="section-three-img"
+                  src="./images/camila-300.jpg"
+                  alt="Marketing"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="three-cards">
                 <h3 class="header-three">Camila Garcia</h3>
                 <p class="text-body">Marketing</p>
@@ -382,14 +454,27 @@
               </div>
             </li>
             <li class="three-title-background card-set-item">
-              <img
-                class="section-three-img"
-                srcset="./images/dan-300@2x.jpg 2x"
-                src="./images/dan-300.jpg"
-                alt="UI Designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    .\images\dan-300WEB-P.webp    1x,
+                    .\images\dan-300@2xWEB-P.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset=".\images\dan-300.jpg 1x, .\images\dan-300@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="section-three-img"
+                  src="./images/dan-300.jpg"
+                  alt="UI Designer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="three-cards">
                 <h3 class="header-three">Daniel Wilson</h3>
                 <p class="text-body">UI Designer</p>

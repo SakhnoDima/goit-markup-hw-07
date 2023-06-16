@@ -1,0 +1,102 @@
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-three .container,
+.customers .container,
+.container.footer {
+  width: 1158px;
+  padding: 0 15px;
+}
+.text-small {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.flax-nav {
+  gap: 76px;
+}
+.adres-nav .flax.list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.section-herou {
+  height: 600px;
+  padding: 188px 0;
+}
+.section-herou .header-two {
+  margin-bottom: 48px;
+}
+/* SECTION-ONE */
+.section-one {
+  padding: 120px 0;
+}
+.div-dignity + .header-two {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+.div-dignity ~ .text-medium {
+  width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.flax-section-one {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  --items: 4;
+  gap: 24px;
+}
+/*  < -- SECTION TWO -- > */
+.section.section-two {
+  padding-bottom: 120px;
+}
+.section.section-two .header-two {
+  margin: 0 0 72px 0;
+  text-align: center;
+}
+.flax.list {
+  display: flex;
+  flex-wrap: wrap;
+  --items: 3;
+  gap: var(--indent);
+}
+/*  < -- SECTION THREE -- > */
+.section-three {
+  padding: 120px 0;
+}
+.flax.list.cards {
+  --items: 4;
+}
+/*  < -- CUSTOMERS -- > */
+.customer-flex {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.customer-li {
+  --items: 6;
+}
+.container.footer {
+  gap: 0;
+}
+.container-logo {
+  margin-right: 120px;
+}
+.container-social-media {
+  margin-right: 80px;
+}
+/*  < -- PORTFOLIO --> */
+.portfolio.list {
+  padding-top: 100px;
+  margin-bottom: 72px;
+}
+.cards {
+  --items: 3;
+}
